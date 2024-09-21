@@ -1,0 +1,19 @@
+{
+  "name": "atcoder-typescript",
+  "module": "main.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run build.mts && node dist/main.cjs < src/input.txt",
+    "submit": "bun run build.mts && cat dist/main.cjs | iconv -t sjis | clip.exe",
+    "submit:mac": "bun run build.mts && cat dist/main.cjs | pbcopy",
+    "format": "biome format --write src/**/*.ts"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.2",
+    "@types/bun": "latest",
+    "esbuild": "0.23.1"
+  },
+  "peerDependencies": {
+    "typescript": "5.6.2"
+  }
+}

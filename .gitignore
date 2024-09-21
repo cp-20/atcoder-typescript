@@ -1,0 +1,8 @@
+node_modules
+dist
+
+src/main.ts
+src/test.ts
+
+src/input.txt
+src/output.txt
